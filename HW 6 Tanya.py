@@ -48,7 +48,7 @@ my_set_2 = set(my_str_2)
 print(my_set_1.intersection(my_set_2))
 
 #7
-my_str_1 = "Gary understand."
+my_str_1 = "Gary understands."
 my_str_2 = "He was looking for a switch."
 new_str_list_1 = []
 new_str_list_2 = []
