@@ -4,7 +4,7 @@ new_animal_list = []
 for index, animal in enumerate(my_animal_list):
     if not index % 2:
         new_animal_list.append(animal)
-    elif index % 2:
+    else:
         new_animal_list.append(animal[::-1])
 print(new_animal_list)
 
