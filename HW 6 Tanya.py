@@ -4,7 +4,7 @@ new_animal_list = []
 for index, animal in enumerate(my_animal_list):
     if not index % 2:
         new_animal_list.append(animal)
-    elif index % 2:
+    else:
         new_animal_list.append(animal[::-1])
 print(new_animal_list)
 
@@ -45,10 +45,10 @@ my_str_1 = "Gary didn't understand why Doug went upstairs."
 my_str_2 = "He fumbled in the darkness looking for the light switch."
 my_set_1 = set(my_str_1)
 my_set_2 = set(my_str_2)
-print(my_set_1.intersection(my_set_2))
+print(list(my_set_1.intersection(my_set_2)))
 
 #7
-my_str_1 = "Gary understand."
+my_str_1 = "Gary understands."
 my_str_2 = "He was looking for a switch."
 new_str_list_1 = []
 new_str_list_2 = []
@@ -60,7 +60,7 @@ for symbol_2 in my_str_2:
         new_str_list_2.append(symbol_2)
 new_str_list_1 = set(new_str_list_1)
 new_str_list_2 = set(new_str_list_2)
-print(new_str_list_1.intersection(new_str_list_2))
+print(list(new_str_list_1.intersection(new_str_list_2)))
 
 # 8
 человек = {"Фамилия": "Пупкин",
