@@ -1,0 +1,19 @@
+# 5
+my_str = "Hello! It is a great day outside, isn't it?"
+new_str_list = []
+my_str_set = set(my_str)
+for symbol in my_str_set:
+    if my_str.count(symbol) == 1:
+        new_str_list.append(symbol)
+print(new_str_list)
+
+#7
+my_str_1 = "Gary understand."
+my_str_2 = "He was looking for a switch."
+new_str_list = []
+my_str_1_set = set(my_str_1)
+my_str_2_set = set(my_str_2)
+for symbol in my_str_1_set.intersection(my_str_2_set):
+    if my_str_1.count(symbol) == 1 and my_str_2.count(symbol) == 1:
+        new_str_list.append(symbol)
+print(new_str_list)
