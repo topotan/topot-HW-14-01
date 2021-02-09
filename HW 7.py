@@ -55,12 +55,14 @@ my_dict_2 = {"q": 11, "j": "temp", 13: "cat", 15: 5, "b": 100, "u": "three"}
 # a
 common_dict_set = set(my_dict_1.keys()).intersection(set(my_dict_2.keys()))
 print(list(common_dict_set))
+
 # б
 unique_key_1 = []
 for key in list(my_dict_1.keys()):
     if key not in common_dict_set:
         unique_key_1.append(key)
 print(unique_key_1)
+
 # в
 key_value_1 = {}
 for key, value in my_dict_1.items():
