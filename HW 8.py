@@ -40,7 +40,7 @@ def transform_text(text):
     index = 0
     text = list(text)
     while index + 10 < len(text):
-        possible_symbols = [", ", "\n", " " + str(randint(1, 100)) + " "]
+        possible_symbols = [", ", " ", "\n", " " + str(randint(1, 50)) + " "]
         space_point = randint(2, 10)
         index += space_point
         text[index] = choice(possible_symbols)
