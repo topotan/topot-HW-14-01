@@ -33,8 +33,6 @@ print(len_random(5, 10))
 
 # 3
 
-new_string = "".join(choice(ascii_lowercase) for _ in range(randint(120, 150)))
-
 
 def transform_text(text):
     index = 0
@@ -46,8 +44,20 @@ def transform_text(text):
         text[index] = choice(possible_symbols)
     text.append(".")
     text = "".join(text)
-    text = text.capitalize()
+    text = text.title() # если только первая буква большая, то capitalize, если хотим чтобы некоторые буквы были маленькими - используем функцию ниже
     return text
 
 
-print(transform_text(new_string))
+# print(transform_text(len_random(100,140)))
+
+def add_lower_case(text):  # опционально, если я хочу чтобы случайным образом буквы в начале слова были маленькими / большими
+    i = 0
+    text = list(text)
+    while i + 3 < len(text):
+        upper_point = randint(1,3)
+        i += upper_point
+        text[i] = text[i].lower()
+    return "".join(text)
+
+
+print(add_lower_case(transform_text(len_random(150,200))))
