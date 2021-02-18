@@ -44,7 +44,7 @@ def transform_text(text):
         text[index] = choice(possible_symbols)
     text.append(".")
     text = "".join(text)
-    text = text.title() # если только первая буква большая, то capitalize, если хотим чтобы некоторые буквы были маленькими - используем функцию ниже
+    text = text.title()  # если только первая буква большая, то capitalize, если хотим чтобы некоторые буквы были маленькими - используем функцию ниже
     return text
 
 
@@ -54,10 +54,10 @@ def add_lower_case(text):  # опционально, если я хочу что
     i = 0
     text = list(text)
     while i + 3 < len(text):
-        upper_point = randint(1,3)
+        upper_point = randint(1, 3)
         i += upper_point
         text[i] = text[i].lower()
     return "".join(text)
 
 
-print(add_lower_case(transform_text(len_random(150,200))))
+print(add_lower_case(transform_text(len_random(150, 200))))
