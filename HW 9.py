@@ -4,7 +4,7 @@ import json
 
 # 1
 
-with open("/Users/tetianatopolian/PycharmProjects/Tanya_Hillel_HW/names.txt", "r") as names:
+with open("names.txt", "r") as names:
     name_list = []
     for line in names.readlines():
         name_list.append(line.split("\t"))
@@ -13,6 +13,7 @@ for word in name_list:
 
 ####################
 # 2
+
 
 def create_json_dict(number_of_keys):
     unique_dict = {}
@@ -32,7 +33,8 @@ def create_json_dict(number_of_keys):
     return unique_dict
 
 
-print(create_json_dict(randint(5, 20)))
+key_number = randint(5, 20)
+print(create_json_dict(key_number))
 
 #######################
 # 3
@@ -42,3 +44,6 @@ def write_in_json(file_path):
     with open(file_path, "w") as json_file:
         json_data = create_json_dict(randint(5, 20))
         json.dump(json_data, json_file)
+
+
+write_in_json("new_json.json")
