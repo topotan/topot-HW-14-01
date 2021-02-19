@@ -5,11 +5,13 @@ import json
 # 1
 
 with open("names.txt", "r") as names:
+    info_list = []
     name_list = []
     for line in names.readlines():
-        name_list.append(line.split("\t"))
-for word in name_list:
-    print(word[1])
+        info_list.append(line.split("\t"))
+for word in info_list:
+    name_list.append(word[1])
+print(name_list)
 
 ####################
 # 2
