@@ -9,8 +9,8 @@ with open("names.txt", "r") as names:
     name_list = []
     for line in names.readlines():
         info_list.append(line.split("\t"))
-for word in info_list:
-    name_list.append(word[1])
+    for word in info_list:
+        name_list.append(word[1])
 print(name_list)
 
 ####################
