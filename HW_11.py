@@ -35,10 +35,10 @@ print(sorted_names)
 
 def sort_years(dict_name):
     if dict_name["years"].endswith("BC."):
-        dates = r"[0-9]+"
+        dates = r"\d+"
         death_year = int(re.findall(dates, dict_name["years"])[-1]) * -1
     else:
-        dates = r"[0-9]+"
+        dates = r"\d+"
         death_year = int(re.findall(dates, dict_name["years"])[-1])
     return death_year
 
