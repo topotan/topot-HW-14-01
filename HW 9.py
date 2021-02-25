@@ -6,12 +6,10 @@ import json
 
 with open("names.txt", "r") as names:
     info_list = []
-    name_list = []
     for line in names.readlines():
-        info_list.append(line.split("\t"))
-for word in info_list:
-    name_list.append(word[1])
-print(name_list)
+        info_list.append(line.split("\t")[1])
+print(info_list)
+
 
 ####################
 # 2
@@ -22,11 +20,7 @@ def create_json_dict(number_of_keys):
     index = 0
     while index < number_of_keys:
         random_key = "".join(choice(ascii_lowercase) for _ in range(5))
-        int_value = randint(-100, 100)
-        float_value = uniform(0, 1)
-        bool_list = [True, False]
-        bool_value = choice(bool_list)
-        value_list = [int_value, float_value, bool_value]
+        value_list = [randint(-100, 100), uniform(0, 1), choice([True, False])]
         probability = (1/3, 1/3, 1/3)  # если не ошибаюсь, то пайтон по умолчанию выбирает с одинаковой вероятностью?
         inside_value = choices(value_list, probability)
         unique_dict[random_key] = inside_value
@@ -48,4 +42,4 @@ def write_in_json(file_path):
         json.dump(json_data, json_file)
 
 
-write_in_json("new_json.json")
+write_in_json("/Users/tetianatopolian/Desktop/lesson3 2")

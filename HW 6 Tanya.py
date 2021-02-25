@@ -91,3 +91,23 @@ cake = {"Составляющие":
                     "Масло": "60г"}}}
 
 print(cake["Составляющие"]["Глазурь"]["Какао"])
+
+
+def nearest_value(values: set, one: int) -> int:
+    if one in values:
+        return one
+    elif one > max(values):
+        return one
+    else:
+        values = sorted(list(values))
+        big = []
+        small = []
+        for num in values:
+            if num > one:
+                big.append(num)
+            if num < one:
+                small.append(num)
+    return big, small
+
+
+print(nearest_value({4, 8, 10, 11, 12}, 9))
