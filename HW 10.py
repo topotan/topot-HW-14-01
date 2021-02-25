@@ -9,11 +9,11 @@ def read_file(file_path):
         with open(file_path, "r") as txt_file:
             txt_content = txt_file.read().strip()
         return txt_content
-    if file_path.endswith(".json"):
+    elif file_path.endswith(".json"):
         with open(file_path, "r") as json_file:
             json_content = json.load(json_file)
         return json_content
-    if file_path.endswith(".csv"):
+    elif file_path.endswith(".csv"):
         with open(file_path, "r") as csv_file:
             csv_reader = csv.reader(csv_file)
             csv_content = []
@@ -55,11 +55,11 @@ def write_file(file_path, data):
         with open(file_path, "w") as txt_doc:
             txt_doc.writelines(data)
 
-    if file_path.endswith(".json"):
+    elif file_path.endswith(".json"):
         with open(file_path, "w") as json_doc:
             json.dump(data, json_doc, indent=4)
 
-    if file_path.endswith(".csv"):
+    elif file_path.endswith(".csv"):
         with open(file_path, "w") as csv_doc:
             field_name_row = data[0]
             fieldnames = field_name_row.keys()
