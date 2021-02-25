@@ -18,11 +18,12 @@ hw_dict = read_json_file("data.json")
 
 
 def sort_name(dict_name):
-    if " " in dict_name["name"]:
-        space_index = dict_name["name"].rfind(" ")
-        last_name = dict_name["name"][space_index+1:]
+    name = dict_name.get("name")
+    if " " in name:
+        space_index = name.rfind(" ")
+        last_name = name[space_index+1:]
     else:
-        last_name = dict_name["name"]
+        last_name = name
 
     return last_name
 
@@ -34,12 +35,13 @@ print(sorted_names)
 
 
 def sort_years(dict_name):
-    if dict_name["years"].endswith("BC."):
-        dates = r"[0-9]+"
-        death_year = int(re.findall(dates, dict_name["years"])[-1]) * -1
+    year = dict_name.get("years")
+    if year.endswith("BC."):
+        dates = r"\d+"
+        death_year = int(re.findall(dates, year)[-1]) * -1
     else:
-        dates = r"[0-9]+"
-        death_year = int(re.findall(dates, dict_name["years"])[-1])
+        dates = r"\d+"
+        death_year = int(re.findall(dates, year)[-1])
     return death_year
 
 
@@ -51,8 +53,7 @@ print(sorted_years)
 
 
 def sort_len(dict_name):
-    text_len = len(dict_name["text"])
-    return text_len
+    return len(dict_name["text"])
 
 
 sorted_len = sorted(hw_dict, key=sort_len)
