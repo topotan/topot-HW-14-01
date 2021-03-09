@@ -1,0 +1,8 @@
+def sort_name(dict_name):
+    name = dict_name.get("name")
+    last_name = name.split()[-1]
+    return last_name
+
+
+sorted_names = sorted(hw_dict, key=sort_name)
+print(sorted_names)
