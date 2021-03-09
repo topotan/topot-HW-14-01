@@ -1,0 +1,238 @@
+[
+    {
+        "name": "J. D. Salinger",
+        "date": "1/1/1919"
+    },
+    {
+        "name": "J. R. R. Tolkien",
+        "date": "3/1/1892"
+    },
+    {
+        "name": "T. S. Eliot",
+        "date": "4/1/1965"
+    },
+    {
+        "name": "Wilkie Collins",
+        "date": "8/1/1824"
+    },
+    {
+        "name": "James Joyce",
+        "date": "13/1/1941"
+    },
+    {
+        "name": "Lewis Carroll",
+        "date": "14/1/1898"
+    },
+    {
+        "name": "Rudyard Kipling",
+        "date": "18/1/1936"
+    },
+    {
+        "name": "Edgar Allan Poe",
+        "date": "19/1/1809"
+    },
+    {
+        "name": "George Orwell",
+        "date": "21/1/1950"
+    },
+    {
+        "name": "Lewis Carroll",
+        "date": "27/1/1832"
+    },
+    {
+        "name": "James Joyce",
+        "date": "2/2/1882"
+    },
+    {
+        "name": "Charles Dickens",
+        "date": "7/2/1812"
+    },
+    {
+        "name": "Jules Verne",
+        "date": "8/2/1828"
+    },
+    {
+        "name": "Victor Hugo",
+        "date": "26/2/1802"
+    },
+    {
+        "name": "Dr. Seuss",
+        "date": "2/3/1904"
+    },
+    {
+        "name": "Jules Verne",
+        "date": "24/3/1905"
+    },
+    {
+        "name": "Charlotte Bronte",
+        "date": "31/3/1855"
+    },
+    {
+        "name": "Charlotte Bronte",
+        "date": "21/4/1816"
+    },
+    {
+        "name": "Emily Dickinson",
+        "date": "15/5/1886"
+    },
+    {
+        "name": "Arthur Conan Doyle",
+        "date": "22/5/1859"
+    },
+    {
+        "name": "Walt Whitman",
+        "date": "31/5/1819"
+    },
+    {
+        "name": "Charles Dickens",
+        "date": "9/6/1870"
+    },
+    {
+        "name": "Ernest Hemingway",
+        "date": "2/7/1961"
+    },
+    {
+        "name": "William Faulkner",
+        "date": "6/7/1962"
+    },
+    {
+        "name": "Arthur Conan Doyle",
+        "date": "7/7/1930"
+    },
+    {
+        "name": "Jane Austen",
+        "date": "18/7/1817"
+    },
+    {
+        "name": "Ernest Hemingway",
+        "date": "21/7/1899"
+    },
+    {
+        "name": "Beatrix Potter",
+        "date": "28/7/1866"
+    },
+    {
+        "name": "Emily Bronte",
+        "date": "30/7/1818"
+    },
+    {
+        "name": "J K Rowling",
+        "date": "31/7/1965"
+    },
+    {
+        "name": "H. G. Wells",
+        "date": "13/8/1946"
+    },
+    {
+        "name": "J. R. R. Tolkien",
+        "date": "2/9/1973"
+    },
+    {
+        "name": "Leo Tolstoy",
+        "date": "9/9/1828"
+    },
+    {
+        "name": "Roald Dahl",
+        "date": "13/9/1916"
+    },
+    {
+        "name": "Stephen King",
+        "date": "21/9/1947"
+    },
+    {
+        "name": "H. G. Wells",
+        "date": "21/9/1866"
+    },
+    {
+        "name": "Wilkie Collin",
+        "date": "23/9/1889"
+    },
+    {
+        "name": "Dr. Seuss",
+        "date": "24/9/1991"
+    },
+    {
+        "name": "F Scott Fitzgerald",
+        "date": "24/9/1896"
+    },
+    {
+        "name": "William Faulkner",
+        "date": "25/9/1897"
+    },
+    {
+        "name": "T. S. Eliot",
+        "date": "26/9/1888"
+    },
+    {
+        "name": "Edgar Allan Poe",
+        "date": "7/10/1849"
+    },
+    {
+        "name": "Oscar Wilde",
+        "date": "16/10/1854"
+    },
+    {
+        "name": "Dylan Thomas",
+        "date": "27/10/1914"
+    },
+    {
+        "name": "Bram Stoker",
+        "date": "8/11/1847"
+    },
+    {
+        "name": "Dylan Thomas",
+        "date": "9/11/1953"
+    },
+    {
+        "name": "Fyodor Dostoyevsky",
+        "date": "11/11/1821"
+    },
+    {
+        "name": "Robert Louis Stevenson",
+        "date": "13/11/1850"
+    },
+    {
+        "name": "Leo Tolstoy",
+        "date": "20/11/1910"
+    },
+    {
+        "name": "C. S. Lewis",
+        "date": "22/11/1963"
+    },
+    {
+        "name": "Roald Dahl",
+        "date": "23/11/1990"
+    },
+    {
+        "name": "C. S. Lewis",
+        "date": "29/11/1898"
+    },
+    {
+        "name": "Mark Twain",
+        "date": "30/11/1835"
+    },
+    {
+        "name": "Oscar Wilde",
+        "date": "30/11/1900"
+    },
+    {
+        "name": "Robert Louis Stevenson",
+        "date": "3/12/1894"
+    },
+    {
+        "name": "Jane Austen",
+        "date": "16/12/1775"
+    },
+    {
+        "name": "Emily Bronte",
+        "date": "19/12/1848"
+    },
+    {
+        "name": "F Scott Fitzgerald",
+        "date": "21/12/1940"
+    },
+    {
+        "name": "Rudyard Kipling",
+        "date": "30/12/1865"
+    }
+]
