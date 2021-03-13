@@ -11,7 +11,7 @@ class PlayableUnit:
         self.strength = 1
         self.dexterity = 1
         self.intellect = 1
-        self.basic = 0
+        self.basic = ""
 
     def heal_unit(self):
         if self.hp < 100:
