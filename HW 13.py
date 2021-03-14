@@ -7,7 +7,7 @@ class PlayableUnit:
     def __init__(self, name, clan):
         self.name = name
         self.clan = clan
-        self.hp = 100
+        self.hp = 98
         self.strength = 1
         self.dexterity = 1
         self.intellect = 1
@@ -60,7 +60,12 @@ class Archer(PlayableUnit):
     def __init__(self, name, clan):
         super().__init__(name, clan)
         bow_type = random.choice(["crossbow", "bow"])
-        self.bonus_quality = f"{name} is a master of {bow_type}!"
+
+    def choose_ability(self):
+        making_choice = input("Choose bow or crossbow: ")
+        if making_choice == "bow" or making_choice == "crossbow":
+            self.bonus_quality = f"{self.name} is a master of {making_choice}!"
+            return self.bonus_quality
         self.basic = "dexterity"
 
 
@@ -78,3 +83,8 @@ class Knight(PlayableUnit):
         weapon_type = random.choice(["axe", "sword", "lance"])
         self.bonus_quality = f"{name} will defeat his enemies with the power of {weapon_type}!"
         self.basic = "strength"
+
+bob = Archer("Bob", "a")
+
+print(bob.choose_ability())
+print(bob.bonus_quality)
