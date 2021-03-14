@@ -39,7 +39,7 @@ def create_json_dict(number_of_keys):
 # Вероятность одинакова при стандартном choice в пайтон 3 и выше
 
 
-key_number = randint(5,20)
+key_number = randint(5, 20)
 print(create_json_dict(key_number))
 
 #######################
