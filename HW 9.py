@@ -26,18 +26,17 @@ def create_json_dict(number_of_keys):
         random_key = "".join(choice(ascii_lowercase) for _ in range(5))
         value = choice(["int", "float", "bool"])
         if value == "int":
-            inside = randint(-100, 100)
-            unique_dict = {random_key: inside}
+            unique_dict = {random_key: randint(-100, 100)}
         elif value == "float":
-            inside = uniform(0, 1)
-            unique_dict = {random_key: inside}
+            unique_dict = {random_key: uniform(0, 1)}
         else:
-            inside = choice([True, False])
-            unique_dict = {random_key: inside}
+            unique_dict = {random_key: choice([True, False])}
         index += 1
         full_dict.update(unique_dict)
 
     return full_dict
+
+# Вероятность одинакова при стандартном choice в пайтон 3 и выше
 
 
 key_number = randint(5,20)
