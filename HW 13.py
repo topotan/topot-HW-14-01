@@ -59,32 +59,37 @@ class PlayableUnit:
 class Archer(PlayableUnit):
     def __init__(self, name, clan):
         super().__init__(name, clan)
-        bow_type = random.choice(["crossbow", "bow"])
+        self.basic = "dexterity"
 
     def choose_ability(self):
-        making_choice = input("Choose bow or crossbow: ")
+        making_choice = input("Choose between bow and crossbow: ")
         if making_choice == "bow" or making_choice == "crossbow":
-            self.bonus_quality = f"{self.name} is a master of {making_choice}!"
-            return self.bonus_quality
-        self.basic = "dexterity"
+            return f"{self.name} is a master of {making_choice}!"
+        else:
+            return "Archer class can only use bow or crossbow."
 
 
 class Mage(PlayableUnit):
     def __init__(self, name, clan):
         super().__init__(name, clan)
-        magic_type = random.choice(["Air", "Fire", "Water"])
-        self.bonus_quality = f"{name} is a Mage of {magic_type}!"
         self.basic = "intellect"
+
+    def choose_ability(self):
+        making_choice = input("Choose between air, fire and water: ")
+        if making_choice == "air" or making_choice == "fire" or making_choice == "water":
+            return f"{self.name} is a Mage of {making_choice}!"
+        else:
+            return "You can only choose between fire, air and water."
 
 
 class Knight(PlayableUnit):
     def __init__(self, name, clan):
         super().__init__(name, clan)
-        weapon_type = random.choice(["axe", "sword", "lance"])
-        self.bonus_quality = f"{name} will defeat his enemies with the power of {weapon_type}!"
         self.basic = "strength"
 
-bob = Archer("Bob", "a")
-
-print(bob.choose_ability())
-print(bob.bonus_quality)
+    def choose_ability(self):
+        making_choice = input("Choose between axe, sword and lance: ")
+        if making_choice == "axe" or making_choice == "sword" or making_choice == "lance":
+            return f"{self.name} is a Knight of {making_choice}!"
+        else:
+            return "You can only choose between axe, sword and lance."
