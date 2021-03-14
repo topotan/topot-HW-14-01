@@ -20,9 +20,8 @@ import json
 def create_json_dict(number_of_keys):
     unique_dict = {}
     full_dict = {}
-    index = 0
 
-    for index in range(number_of_keys):
+    for _ in range(number_of_keys):
         random_key = "".join(choice(ascii_lowercase) for _ in range(5))
         value = choice(["int", "float", "bool"])
         if value == "int":
@@ -31,7 +30,7 @@ def create_json_dict(number_of_keys):
             unique_dict = {random_key: uniform(0, 1)}
         else:
             unique_dict = {random_key: choice([True, False])}
-        index += 1
+
         full_dict.update(unique_dict)
 
     return full_dict
