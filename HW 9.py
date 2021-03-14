@@ -22,7 +22,7 @@ def create_json_dict(number_of_keys):
     full_dict = {}
     index = 0
 
-    while index in range(number_of_keys):
+    for index in range(number_of_keys):
         random_key = "".join(choice(ascii_lowercase) for _ in range(5))
         value = choice(["int", "float", "bool"])
         if value == "int":
