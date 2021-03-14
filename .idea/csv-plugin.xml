@@ -17,6 +17,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/HW 12.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/HW 13.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Name_age_country.csv">
           <value>
             <Attribute>

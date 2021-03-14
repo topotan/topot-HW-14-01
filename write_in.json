@@ -1,1 +1,14 @@
-{"aunvw": 0.9717767326159907, "zujyg": 0.3604494190542985, "lolbr": 75, "xshhr": true, "qjzpa": 0.7285857405540734, "mnsqb": false, "kslli": true, "calkh": 0.033531140201049525, "mtmni": 100, "mxtqs": 0.10064583283492223}
+{
+    "street": "3526 HIGH ST",
+    "city": "SACRAMENTO",
+    "zip": "95838",
+    "state": "CA",
+    "beds": "2",
+    "baths": "1",
+    "sq__ft": "836",
+    "type": "Residential",
+    "sale_date": "Wed May 21 00:00:00 EDT 2008",
+    "price": "59222",
+    "latitude": "38.631913",
+    "longitude": "-121.434879"
+}

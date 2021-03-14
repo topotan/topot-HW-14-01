@@ -19,12 +19,7 @@ hw_dict = read_json_file("data.json")
 
 def sort_name(dict_name):
     name = dict_name.get("name")
-    if " " in name:
-        space_index = name.rfind(" ")
-        last_name = name[space_index+1:]
-    else:
-        last_name = name
-
+    last_name = name.split()[-1]
     return last_name
 
 

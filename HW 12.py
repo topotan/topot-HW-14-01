@@ -21,10 +21,10 @@ def get_quotes(amount):
             if result["quoteAuthor"]:
                 author_dicts.append(result)
 
+        return author_dicts
+
     except json.decoder.JSONDecodeError:
         print("Web server is not loading correctly. Try again!")
-
-    return author_dicts
 
 
 print(get_quotes(5))
