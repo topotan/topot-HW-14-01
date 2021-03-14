@@ -31,7 +31,7 @@ def create_json_dict(number_of_keys):
         elif value == "float":
             inside = uniform(0, 1)
             unique_dict = {random_key: inside}
-        elif value == "bool":
+        else:
             inside = choice([True, False])
             unique_dict = {random_key: inside}
         index += 1
