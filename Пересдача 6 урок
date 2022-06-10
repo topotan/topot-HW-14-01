@@ -17,3 +17,5 @@ for symbol in my_str_1_set.intersection(my_str_2_set):
     if my_str_1.count(symbol) == 1 and my_str_2.count(symbol) == 1:
         new_str_list.append(symbol)
 print(new_str_list)
+
+adding as test for pull request
